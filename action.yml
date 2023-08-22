@@ -1,5 +1,5 @@
 name: 'Coding Standard for Magento 2'
-description: ''
+description: 'Validates code by PHP Code sniffer'
 inputs:
   errorSeverity:
     description: 'Error severity'
@@ -18,3 +18,6 @@ runs:
   args:
     - ${{ inputs.errorSeverity }}
     - ${{ inputs.warningSeverity }}
+branding:
+  icon: 'code'
+  color: 'green'
