@@ -1,4 +1,4 @@
-name: 'Coding Standard for Magento 2'
+name: 'PHP CS for Magento 2 GitHub Actions'
 description: 'Validates code by PHP Code sniffer'
 inputs:
   fileExtensions:
