@@ -1,10 +1,10 @@
 # Container image that runs your code
-FROM php:8.1-cli
+FROM php:8.1-cli-alpine
 
-RUN apt-get install -y \
-        libzip-dev \
-        zip \
-  && docker-php-ext-install zip
+RUN apk add --no-cache \
+      libzip-dev \
+      zip \
+    && docker-php-ext-install zip
 
 COPY --from=composer:2.2 /usr/bin/composer /usr/local/bin/composer
 
