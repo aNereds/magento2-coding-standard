@@ -1,4 +1,4 @@
-
+#!/bin/sh
 echo "Error Severity $1"
 echo "Warning Severity $2"
 echo $GITHUB_WORKSPACE
