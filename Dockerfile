@@ -16,5 +16,6 @@ RUN echo memory_limit = -1 >> /usr/local/etc/php/conf.d/custom-memory.ini
 COPY entrypoint.sh /entrypoint.sh
 
 RUN ls -la
-
+RUN chmod +x entrypoint.sh
+RUN ls -la
 ENTRYPOINT ["/entrypoint.sh"]
