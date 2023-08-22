@@ -1,14 +1,18 @@
 name: 'Coding Standard for Magento 2'
 description: 'Validates code by PHP Code sniffer'
 inputs:
-  errorSeverity:
-    description: 'Error severity'
+  fileExtensions:
+    description: 'File extensions to check'
     required: false
-    default: '8'
-  warningSeverity:
-    description: 'Warning severity'
+    default: 'php,phtml,xml'
+  onlyErrors:
+    description: 'Display only errors if such exists'
     required: false
-    default: '8'
+    default: 'no'
+  sourceReport:
+    description: 'Display Source report if such exists'
+    required: false
+    default: 'no'
 outputs:
   time:
     description: ''
@@ -16,8 +20,9 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.errorSeverity }}
-    - ${{ inputs.warningSeverity }}
+    - ${{ inputs.fileExtensions }}
+    - ${{ inputs.onlyErrors }}
+    - ${{ inputs.sourceReport }}
 branding:
   icon: 'code'
   color: 'green'
