@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "Checking file extensions: $1"
-echo "Display only warnings: $2"
+echo "Display only Errors: $2"
 echo "Show Source report: $3"
 echo $GITHUB_WORKSPACE
 
