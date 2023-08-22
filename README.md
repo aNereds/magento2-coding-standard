@@ -2,9 +2,9 @@
 ​
 This repository's aim is to provide open sourced GitHub action to develop better Magento 2 extensions.
 ​
-- [Main Functionalities](#markdown-header-main-functionalities)
-- [Installation](#markdown-header-installation)
-- [Configuration](#markdown-header-configuration)
+- [Main Functionalities](#Main-functionalities)
+- [Installation](#Installation)
+- [Configuration](#Configuration)
   ​
   ​
 ## Main Functionalities
