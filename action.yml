@@ -1,0 +1,20 @@
+name: 'Coding Standard for Magento 2'
+description: ''
+inputs:
+  errorSeverity:
+    description: 'Error severity'
+    required: false
+    default: '8'
+  warningSeverity:
+    description: 'Warning severity'
+    required: false
+    default: '8'
+outputs:
+  time:
+    description: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.errorSeverity }}
+    - ${{ inputs.warningSeverity }}
