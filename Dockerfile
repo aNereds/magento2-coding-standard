@@ -2,9 +2,9 @@
 FROM php:8.1-cli
 
 RUN apt-get install -y \
-        zlib1g-dev \
+        libzip-dev \
         zip \
-  && docker-php-ext-install zip \
+  && docker-php-ext-install zip
 
 COPY --from=composer:2.2 /usr/bin/composer /usr/local/bin/composer
 
