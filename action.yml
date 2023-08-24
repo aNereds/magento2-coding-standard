@@ -31,6 +31,8 @@ runs:
     - ${{ inputs.fileExtensions }}
     - ${{ inputs.onlyErrors }}
     - ${{ inputs.sourceReport }}
+    - ${{ inputs.errorSeverity }}
+    - ${{ inputs.warningSeverity }}
 branding:
   icon: 'code'
   color: 'green'
