@@ -12,7 +12,7 @@ inputs:
   sourceReport:
     description: 'Display Source report if such exists'
     required: false
-    default: 'yes'
+    default: 'no'
 outputs:
   time:
     description: ''
