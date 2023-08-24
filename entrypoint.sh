@@ -13,7 +13,7 @@ fi
 
 cd $GITHUB_WORKSPACE
 sh -c "/root/.composer/vendor/bin/phpcs -i"
-sh -c "/root/.composer/vendor/bin/phpcs --standard=Magento2 --extensions=$1 $COMMAND_FLAGS $GITHUB_WORKSPACE ./"
+sh -c "/root/.composer/vendor/bin/phpcs --standard=Magento2 --extensions=$1 $COMMAND_FLAGS $GITHUB_WORKSPACE -s ./"
 
 if [ "$3" = "yes" ]
 then
