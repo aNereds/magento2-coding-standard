@@ -8,7 +8,7 @@ RUN apk add --no-cache \
 
 COPY --from=composer:2.2 /usr/bin/composer /usr/local/bin/composer
 
-RUN composer config allow-plugins.dealerdirect/phpcodesniffer-composer-installer  true
+RUN /usr/local/bin/composer config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
 RUN /usr/local/bin/composer global require --dev magento/magento-coding-standard -n
 
 RUN ~/.composer/vendor/bin/phpcs --config-set installed_paths ../../magento/magento-coding-standard/,../../phpcompatibility/php-compatibility/PHPCompatibility
