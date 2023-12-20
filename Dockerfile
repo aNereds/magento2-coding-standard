@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM php:8.1-cli-alpine
+FROM php:8.2-cli-alpine
 
 RUN apk add --no-cache \
       libzip-dev \
