@@ -13,4 +13,4 @@ then
 fi
 
 cd $GITHUB_WORKSPACE
-sh -c "/root/.composer/vendor/bin/phpcs --standard=Magento2 --extensions=$1 --error-severity=10 --report=code,summary --ignore-annotations $COMMAND_FLAGS $GITHUB_WORKSPACE ./"
+sh -c "/root/.composer/vendor/bin/phpcs --standard=Magento2 --extensions=$1 --error-severity=10 --report=code,summary $COMMAND_FLAGS $GITHUB_WORKSPACE ./"
